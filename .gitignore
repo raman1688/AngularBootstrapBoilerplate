@@ -1,0 +1,4 @@
+.idea
+.git-credentials
+node_modules/
+platforms/

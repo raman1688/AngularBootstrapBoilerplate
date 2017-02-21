@@ -1,0 +1,27 @@
+@font-face{
+	font-family: 'ooredoo-Regular';
+	src: local('ooredoo-Regular'), url('../fonts/ooredoo-Regular.ttf') format('truetype');
+}
+.ooredoo-Regular {
+	font-family: 'ooredoo-Regular';
+}
+
+
+@font-face{
+	font-family: 'ooredoo-Bold';
+	src: local('ooredoo-Bold'), url('../fonts/ooredoo-Bold.ttf') format('truetype');
+}
+.ooredoo-Bold {
+	font-family: 'ooredoo-Bold' !important;
+} 
+
+
+@font-face{
+	font-family: 'ooredoo-Light';
+	src: local('ooredoo-Light'), url('../fonts/ooredoo-Light.ttf') format('truetype');
+}
+
+.ooredoo-Light {
+	font-family: 'ooredoo-Light' !important;
+} 
+

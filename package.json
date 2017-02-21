@@ -1,0 +1,26 @@
+{
+  "name": "4g_offering",
+  "version": "1.0.0",
+  "description": "4G Offering app for Indosat",
+  "author": "IBM",
+  "dependencies": {
+    "gulp-clean": "^0.3.2",
+    "gulp-minifier": "^0.1.4"
+  },
+  "devDependencies": {   
+    "concurrently": "^2.0.0",
+    "gulp": "^3.9.0",   
+    "gulp-imagemin": "^2.4.0",
+    "gulp-postcss": "^6.0.1",    
+    "lite-server": "^2.1.0",
+	"bower": "1.2.6"	
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+	"lite": "lite-server",
+    "gulp": "gulp",
+    "start": "concurrent \"npm run gulp\" \"npm run lite\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}

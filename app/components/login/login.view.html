@@ -1,0 +1,190 @@
+    
+<div class="row p-a-3 margin-bottom-sm">
+        <div class="col-xs-12 vcenter">
+    <div class="pull-left"><img src="assets/img/profileicon.png" class="img-responsive pull-left margin-bottom-xs headerImgMaxWidth" alt="Responsive image">
+    
+    </div>
+    <label class="fontColorBlack mini-font">Salamat datang di Indosat Ooredoo</label>
+   
+    </div>
+</div>
+
+<div class="row margin-bottom-lg">
+    <div class="col-md-12">
+        <img src="assets/img/paymentbanner.png" class="img-responsive center-block" alt="Responsive image">
+    </div>
+</div>
+
+<div class="row margin-top-sm">
+   
+    <div class="col-md-1"></div>
+	<div class="col-md-10">
+		 <button type="button" class="btn button-color btn-md btn-block" data-toggle="modal" data-target="#loginModal">Login</button>
+	</div>
+	<div class="col-md-1"></div>
+    <div class="col-xs-12 text-center micro-font margin-top-xs">
+		 <p style="text-center">Atau</p>
+	</div>
+    </div>
+    
+    
+    <div class="row ">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+	<img src="assets/img/google.png" style="width:100%;"  class="img-responsive center-block "  ng-click="GplusLogin()" alt="Responsive image">		
+	</div>
+	<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<img src="assets/img/facebook.png" style="width:100%;" ng-click="doFbLogin()" class="img-responsive center-block" alt="Responsive image">	 
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+    
+    <!-- Modal -->
+  <div class="modal fade" id="loginModal" role="dialog" style="margin:80px auto;">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom:0 !important;"> 
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 28px;margin-top: -10px;">&times;</button> 
+          <h4 class="modal-title"></h4> 
+        </div> 
+        <div class="modal-body">
+        	<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4">
+					<img src="assets/img/SuccessCreated.png" class="img-responsive center-block margin-bottom-xs" alt="Responsive image">
+				</div>
+				<div class="col-xs-4"></div>
+			</div>
+			<div class="row">
+					<div class="col-xs-2"></div>
+					<div class="col-xs-8 mini-font" style="text-align: center;"><b>Login ke akun anda</b></div>
+					<div class="col-xs-2"></div>
+				</div>	
+				<br/>
+			<div class="row margin-bottom-md">
+				<div class="col-xs-12">
+					<div class="form-group">
+			      		<label for="inputlg" class="mini-font" style="font-weight: 300;">Masukkan Email</label>
+			      		<input class="form-control input-lg-popup mini-font" style="background-color:#f3f3f3;font-weight: 600"  ng-model="login_id" type="text" maxlength="50">
+			
+			    	</div>	
+				</div>
+				<div class="col-xs-12">
+					<div class="form-group">
+			      		<label for="inputlg" class="mini-font" style="font-weight: 300;">Masukkan kata sandi</label>
+			      		<input class="form-control input-lg-popup mini-font" style="background-color:#f3f3f3;font-weight: 600"  ng-model="password" type="text" maxlength="50">
+			
+			    	</div>	
+				</div>
+			</div>
+			
+			<div class="row margin-top-md margin-bottom-sm">
+				<div class="col-xs-12">
+				 <button type="submit" class="btn-danger btn-lg btn-block"  ng-click="trackOrder()">Login</button>
+				 </div>				 
+			</div>
+			<div class="row">
+			 	<div class="col-xs-12 micro-font" style="text-align:center;font-weight: bold;" data-dismiss="modal" data-toggle="modal" data-target="#forgotPasswordModal">
+					Lupa kata sandi?	
+				</div>
+			</div>
+			
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+    
+   
+    <div class="modal fade" id="forgotPasswordModal" role="dialog" style="margin:120px auto;">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom:0 !important;"> 
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 28px;margin-top: -10px;">&times;</button> 
+          <h4 class="modal-title"></h4> 
+        </div> 
+        <div class="modal-body">
+        	<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4">
+					<img src="assets/img/SuccessCreated.png" class="img-responsive center-block margin-bottom-xs" alt="Responsive image">
+				</div>
+				<div class="col-xs-4"></div>
+			</div>
+			<div class="row">
+					<div class="col-xs-2"></div>
+					<div class="col-xs-8" style="text-align: center;"><b>Lupa kata sandi?</b></div>
+					<div class="col-xs-2"></div>
+				</div>	
+				<br/>
+			<div class="row margin-bottom-md">
+				<div class="col-xs-12">
+					<div class="form-group">
+			      		<label for="inputlg" class="mini-font" style="font-weight: 300;">Masukkan Email</label>
+			      		<input class="form-control input-lg-popup mini-font" style="background-color:#f4f3f2;font-weight: 600"  ng-model="login_id" type="text" maxlength="50">
+			
+			    	</div>	
+				</div>				
+			</div>
+			
+			
+			<div class="row margin-top-md">
+				<div class="col-xs-12">
+				 <button type="submit" class="btn-danger btn-lg btn-block" data-dismiss="modal" data-toggle="modal" data-target="#resetPasswordModal">Reset Kata Sandi</button>
+				 </div>
+			</div>
+			<br><br><br>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="modal fade" id="resetPasswordModal" role="dialog" style="margin:120px auto;">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom:0 !important;"> 
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="font-size: 28px;margin-top: -10px;">&times;</button> 
+          <h4 class="modal-title"></h4> 
+        </div> 
+        <div class="modal-body">
+        	<div class="row">
+				<div class="col-xs-4"></div>
+				<div class="col-xs-4">
+					<img src="assets/img/SuccessCreated.png" class="img-responsive center-block margin-bottom-xs" alt="Responsive image">
+				</div>
+				<div class="col-xs-4"></div>
+			</div>
+			<div class="row">
+					
+					<div class="col-xs-12" style="text-align: center;"><b>Kata Sandi berhasil di reset!</b></div>
+					
+					<div class="col-xs-12" style="text-align: center;"><b>Cek Email kamu!</b></div>
+				</div>					
+					
+			<div class="row margin-top-md">
+				<div class="col-xs-12">
+				 <button type="submit" class="btn-danger btn-lg btn-block" data-dismiss="modal" ng-click="trackOrder()">OK</button>
+				 </div>
+			</div>
+			<br><br><br>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <errorpopup title="Error" visible="showErrorModal"></errorpopup>
